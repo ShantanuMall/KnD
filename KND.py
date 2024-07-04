@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 # Load the external Excel file containing valid meter numbers and their corresponding details
-valid_accounts_df = pd.read_excel('/Users/punit/Downloads/5to9Consummer.xlsx')  # Ensure this file exists with the correct path
+valid_accounts_df = pd.read_excel('5to9Consummer.xlsx')  # Ensure this file exists with the correct path
 
 # Create a dictionary for fast lookup of meter numbers and their corresponding details
 meter_details_dict = valid_accounts_df.set_index('SERIAL_NBR').T.to_dict()
